@@ -3,11 +3,23 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <label for="nome">Nome:</label>
-        <input id="nome" />
-        <button id="btn" onclick="exibirTexto()">Enviar</button>        
-        <br />
-        <span id="result">Resultado:</span>
+        <form>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text"/>
+            <br /><br />
+            <label for="select">Select option:</label>
+            <select id="select">
+                <option id="opt1">opção 1</option>
+                <option id="opt2">opção 2</option>
+                <option id="opt3">opção 3</option>
+                <option id="opt4">opção 4</option>
+            </select>
+            
+            <button id="btn" onclick="exibirTexto()">Enviar</button>        
+            <input type="reset" value="Limpar"/>
+            <br />
+            <span id="result">Resultado:</span>
+        </form>
     </body>
     <script type="text/javascript" src="script.js"></script>
 </html>
