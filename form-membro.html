@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário</h1>
+    <p>Complete o cadastro</p>
+    <br>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>e-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label>Você faz parte de alguma célula?</label>
+           
+            <label>
+            <input type="radio" name="célula" value="membro de célula" checked>Sim
+            </label>
+           
+            <label>
+             <input type="radio" name="célula" value="não é membro de célula">Não
+            </label>
+        </div>
+        
+        <div>
+            <label>Qual célula você participa?</label>
+            <select id="selecaodecelula">
+                <option selected disabled value="">Selecione...</option>
+                <option>Tabernáculo Alameda</option>
+                <option>Célula Rubem Berta</option>
+                <option>Célula Baltazar</option>
+                <option>Nenhuma</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Selecione quais livros da bíblia você já leu:</label><br><br>
+                <input type="checkbox" id="livro1" name="livro1" value="genesis">
+                <label for="livro1">Genesis</label>
+                <input type="checkbox" id="livro2" name="livro2" value="jonas">Jonas
+                <input type="checkbox" id="livro3" name="livro3" value="marcos">Marcos
+
+            </div>
+
+        </fieldset>
+
+
+    </form>
+
+
+
+</body>
+</html>
